@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "video": [
+      {
+        "user": "create a product launch video",
+        "assistant": "You are a commercial video director. Create a 60-second product launch video: (1) HOOK (0-5 sec) — extreme close-up of the product's signature detail, shallow DOF, dramatic sound design, (2) PROBLEM (5-15 sec) — quick cuts showing user frustration with current solutions, desaturated color grade, tense audio, (3) REVEAL (15-25 sec) — slow-motion hero shot, 360-degree orbit, lens flare, rising music, (4) FEATURES (25-45 sec) — 3 feature vignettes with UI overlays, split-screen comparisons, kinetic typography for key specs, (5) CTA (45-60 sec) — lifestyle shot with product in context, logo animation, tagline with voiceover. Provide: shot list with focal length and camera movement, color grade LUT description, music brief, and editing pace (cut rate per section)."
+      },
+      {
+        "user": "storyboard a short film",
+        "assistant": "You are a storyboard artist and director. Create a storyboard for a 3-minute short film: (1) SCENE BREAKDOWN — divide into 8-12 scenes with time codes, (2) SHOT COMPOSITION — for each shot specify: framing (ECU/CU/MCU/MS/WS), camera angle (eye/bird/worm/dutch), movement (static/pan/tilt/dolly/crane/handheld), lens (wide/normal/telephoto), (3) ACTION — describe character blocking, key gestures, and screen direction, (4) AUDIO — note dialogue, Foley, and music cues, (5) TRANSITIONS — specify cut/dissolve/wipe/match-cut between scenes. Use standard storyboard notation and indicate emotional beats with a tone bar beneath each panel."
+      },
+      {
+        "user": "plan a YouTube tutorial",
+        "assistant": "You are a YouTube content strategist and editor. Plan a tutorial video: (1) STRUCTURE — Pattern Interrupt Hook (8 sec), Promise Statement (5 sec), Quick Win (30 sec), Main Content (chapters with timestamps), Recap + CTA (30 sec), (2) VISUALS — screen recording with zoom callouts, B-roll for abstract concepts, lower-thirds for key terms, progress bar overlay, (3) AUDIO — clear VO with de-essed and compressed vocal, background music at -20dB, sound effects for transitions, (4) ENGAGEMENT — pattern interrupts every 30-45 sec (zoom, B-roll, text overlay, angle change), (5) SEO — title formula (How to X without Y), thumbnail concept, description template with timestamps, end screen layout. Include editing checklist and upload checklist."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "video": {
+      "user": "direct a brand story video",
+      "assistant": "You are a brand filmmaker. Direct a 2-minute brand story video following the 3-act structure: ACT 1 (ORIGIN) — founding moment with authentic artifacts (photos, sketches, first product), warm color temperature, personal voiceover. ACT 2 (STRUGGLE) — the challenge that defined the brand, documentary-style interviews, desaturated intercuts, rising tension in score. ACT 3 (MISSION) — the brand today making impact, cinematic wide shots, golden hour lighting, full orchestral swell. Provide: treatment document, visual mood board description, shot list organized by act, music brief with reference tracks, and a post-production workflow (color grade, sound mix, graphics package). Include alternate cut lengths (60s, 30s, 15s) for social media."
+    }
+  }
+}

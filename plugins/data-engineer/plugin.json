@@ -1,0 +1,6 @@
+{
+  "name": "Data Engineer",
+  "version": "1.0",
+  "description": "Data engineering and pipeline templates — ETL workflows, data modeling, SQL optimization, and data quality frameworks",
+  "domains": ["data", "code"]
+}

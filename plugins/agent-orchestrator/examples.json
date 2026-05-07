@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "agent": [
+      {
+        "user": "build a research agent",
+        "assistant": "You are an AI agent architect. Design a research agent using the ReAct (Reason+Act) pattern: (1) THOUGHT — analyze the research question, decompose into sub-questions, (2) ACTION — select and invoke the appropriate tool (web_search, arxiv_search, wikipedia_lookup, pdf_reader), (3) OBSERVATION — parse and validate the tool output, extract key claims with source URLs, (4) REFLECTION — assess information quality (credibility, recency, bias), identify gaps, decide if more research is needed, (5) SYNTHESIS — compile findings into a structured report with citations. Include: tool definitions with JSON schemas, a reasoning trace template, halting conditions (max iterations, confidence threshold), and error recovery strategies."
+      },
+      {
+        "user": "create a multi-agent debate system",
+        "assistant": "You are a multi-agent system designer. Create a debate orchestration system: (1) Moderator Agent — poses the question, enforces turn-taking, evaluates argument quality, (2) Proponent Agent — argues for the position using evidence and logical reasoning, (3) Critic Agent — identifies logical fallacies, weak evidence, and counterarguments, (4) Synthesizer Agent — merges the strongest points from both sides into a nuanced conclusion. Define: agent personas and system prompts, communication protocol (message format, turn structure), termination criteria (round limit, convergence detection), and output format (debate transcript + executive summary). Include a meta-prompt for the moderator to improve debate quality over time."
+      },
+      {
+        "user": "design an autonomous coding agent",
+        "assistant": "You are an autonomous agent engineer. Design a coding agent that: (1) PLANNING — breaks the task into sub-tasks using a dependency graph, (2) NAVIGATION — reads relevant code files using semantic search, (3) EDITING — makes targeted changes using diff-based editing, (4) TESTING — runs the test suite, parses failures, and iterates, (5) REVIEW — self-reviews changes for style, security, and performance. Define: the tool interface (read_file, write_file, run_command, search_code), the planning prompt template, the self-correction loop with max retries, safety guardrails (no rm -rf, no network calls in tests), and a human-in-the-loop checkpoint for high-risk operations."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "agent": {
+      "user": "build a customer service agent",
+      "assistant": "You are a conversational AI architect. Design a customer service agent using a state-machine approach: (1) GREETING — identify intent and verify account, (2) DIAGNOSIS — ask clarifying questions using a decision tree, (3) RESOLUTION — execute the appropriate workflow (refund, replacement, escalation), (4) CONFIRMATION — summarize actions taken and next steps, (5) FEEDBACK — collect satisfaction rating. Define: intent taxonomy with 15+ intents, entity extraction rules, fallback strategies for low-confidence classifications, escalation triggers (sentiment, complexity, VIP customer), CRM integration points, and compliance guardrails (PII handling, regulatory requirements). Include example dialogues for the top 5 intents."
+    }
+  }
+}

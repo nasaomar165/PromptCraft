@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "image": [
+      {
+        "user": "photorealistic portrait",
+        "assistant": "A professional headshot portrait of [SUBJECT], shot on Canon EOS R5 with 85mm f/1.4 lens, natural window lighting from camera left creating soft Rembrandt lighting, shallow depth of field with creamy bokeh, subject making direct eye contact, slight confident smile, wearing tailored navy blazer over white shirt, neutral dark grey studio backdrop, color grading with lifted shadows and warm skin tones, 4K resolution, magazine editorial quality"
+      },
+      {
+        "user": "isometric game asset",
+        "assistant": "An isometric 3D game asset of [SUBJECT], clean vector-style rendering with soft ambient occlusion, pastel color palette with vibrant accent color, no harsh shadows, anti-aliased edges, transparent background, consistent 2:1 isometric grid alignment, suitable for a cozy management game, pixar-meets-studio-ghibli aesthetic, high detail with readable silhouette at 256x256 display size"
+      },
+      {
+        "user": "concept art environment",
+        "assistant": "Environment concept art of [SUBJECT], wide establishing shot, atmospheric perspective with 3 depth layers (foreground detail, midground focus, background haze), dramatic sky with volumetric god rays, ancient ruins overgrown with bioluminescent vegetation, small human figure for scale reference, painted in the style of Craig Mullins with digital oil brush technique, muted earth tones with cyan accent lighting, 16:9 cinematic framing"
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "image": {
+      "user": "product photography",
+      "assistant": "A premium product photograph of [SUBJECT], studio lighting setup: key light at 45 degrees with large softbox, rim light from behind for edge definition, fill card on shadow side, product placed on a minimalist white frosted acrylic surface with subtle reflection, minimal props that reinforce brand identity, focus stacking for edge-to-edge sharpness, color-accurate white balance, commercial advertising quality, clean background with subtle gradient, post-processed with focus on material texture rendering (metallic sheen, matte finish, glass transparency as appropriate)"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "few_shot_examples": {
+    "code": [
+      {
+        "user": "build an inventory system",
+        "assistant": "You are a game systems programmer. Build an inventory system: (1) DATA MODEL — item definition (id, name, description, icon, stackable, maxStack, rarity, tags), inventory slot (item ref, quantity, slot index), (2) OPERATIONS — add (with stack merging), remove, move, swap, split stack, drop, (3) CONSTRAINTS — weight/capacity limits with encumbrance penalties, item type restrictions per slot, (4) UI — grid layout with drag-and-drop, tooltip on hover, context menu (use/equip/drop/examine), (5) PERSISTENCE — save/load serialization, dirty flag for network sync, (6) EVENTS — onItemAdded, onItemRemoved, onStackChanged, onInventoryFull — for quest tracking and achievements. Implement with an observer pattern for UI binding and provide unit tests for edge cases (overflow stacking, moving to full inventory, swapping with locked slots)."
+      },
+      {
+        "user": "create a dialogue system",
+        "assistant": "You are a narrative systems developer. Create a dialogue system: (1) DATA — dialogue nodes with speaker, text, choices, and conditions, (2) FLOW — branching dialogue with conditional visibility (skill checks, item ownership, quest state), (3) VARIABLES — local dialogue variables and global quest variables, (4) COMMANDS — embedded commands in dialogue text: [give_item: sword], [set_flag: met_king], [start_quest: royal_favor], (5) UI — typewriter text effect, speaker portrait, choice buttons with requirement hints, (6) EDITOR — node-based visual editor spec with JSON export format. Provide: the node schema, a sample 10-node dialogue tree with 3 branches, a dialogue renderer interface, and a localization-ready string key system."
+      },
+      {
+        "user": "implement a quest system",
+        "assistant": "You are a game designer and programmer. Implement a quest system: (1) QUEST DEFINITION — quest ID, title, description, objectives (kill X, collect Y, go to Z, talk to NPC), rewards (XP, items, unlocks), prerequisites (level, quest completion, faction), (2) OBJECTIVE TRACKING — event-driven progress updates via a pub/sub bus, auto-complete when all objectives met, (3) QUEST STATES — unavailable, available, active, completed, failed, abandoned — with valid transitions, (4) BRANCHING — main quests with linear sequence, side quests with prerequisites, dynamic quests triggered by world state, (5) JOURNAL UI — active quests tab with progress bars, completed tab, available hints, (6) SAVE GAME — serialize all quest states and objective progress. Include: a quest script DSL example, the event subscription mapping, and edge case handling (quest reset on death, shared objectives between quests)."
+      }
+    ],
+    "writing": [
+      {
+        "user": "write NPC dialogue",
+        "assistant": "You are a narrative designer. Write NPC dialogue with depth and personality: (1) CHARACTER VOICE — define speech patterns, vocabulary level, verbal tics, and emotional range, (2) DIALOGUE TREE — greeting (default + conditional variants), small talk (3 topics rotating), quest dialogue (offer, in-progress reminders, completion), shop dialogue (browse, buy, sell, haggle), rumor/gossip (worldbuilding lore), farewell (3 variants), (3) PLAYER CHOICES — 3 options per branch: diplomatic/aggressive/clever, each leading to different outcomes, (4) REACTIVITY — dialogue changes based on: reputation, race/class, equipped items, completed quests, time of day, (5) BANTER — idle lines when player is nearby, triggered banters between party NPCs. Provide: full dialogue tree with at least 25 nodes, character voice bible, and a localization-ready string table format."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "code": {
+      "user": "build a combat system",
+      "assistant": "You are a gameplay programmer. Build a turn-based combat system: (1) ENTITIES — combatants with HP, MP, stats (STR/DEX/INT/CON), status effects, and action queue, (2) TURN ORDER — speed-based initiative with tiebreaker rules, (3) ACTIONS — attack (physical/magical), defend, use item, flee — each with target selection (self/ally/enemy/all), (4) DAMAGE FORMULA — base damage = (attack_stat * skill_multiplier) - (defense_stat * resistance), variance ±10%, critical hit chance = DEX/100, (5) STATUS EFFECTS — poison (DoT), stun (skip turn), buff/debuff (stat modifier with duration), (6) COMBAT FLOW — start (roll initiative), loop (turn execution, check win/lose, apply DoTs, check status expiry), end (victory/defeat with rewards). Implement the state machine, provide the damage formula with edge cases (overkill, minimum damage, invulnerability), and design the combat UI layout."
+    },
+    "writing": {
+      "user": "write a game design document",
+      "assistant": "You are a game design document writer. Write a comprehensive GDD: (1) CONCEPT — one-sentence pitch, core loop diagram, target audience, comparable games, (2) PILLARS — 3 design pillars that every feature must serve, (3) MECHANICS — detailed descriptions of core systems with input/output maps and interaction matrices, (4) PROGRESSION — player journey map from minute 1 to hour 100, unlock schedule, difficulty curve, (5) NARRATIVE — world bible (factions, locations, timeline), character profiles with arcs, story structure with branching points, (6) ECONOMY — resource types, earn/spend sinks, inflation controls, (7) LEVEL DESIGN — level flow diagram, pacing chart, enemy placement rules, (8) UI/UX — wireframes for all screens, control scheme, accessibility features, (9) TECHNICAL — engine choice, performance budgets, platform targets, (10) MILESTONES — prototype, vertical slice, alpha, beta, gold with deliverables per phase."
+    }
+  }
+}

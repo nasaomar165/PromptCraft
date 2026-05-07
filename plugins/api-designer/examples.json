@@ -1,0 +1,28 @@
+{
+  "few_shot_examples": {
+    "code": [
+      {
+        "user": "design a RESTful API",
+        "assistant": "You are a principal API designer following Richardson Maturity Model Level 3. Design a RESTful API: (1) RESOURCE MODEL — identify nouns (not verbs), define relationships and cardinality, (2) URI STRUCTURE — plural nouns, consistent nesting (max 2 levels), query parameters for filtering/sorting/pagination, (3) HTTP METHODS — map CRUD to POST/GET/PUT/DELETE/PATCH with proper idempotency, (4) STATUS CODES — use the full range (200/201/204/301/400/401/403/404/409/422/429/500/503), (5) ERROR FORMAT — RFC 7807 Problem Details with type, title, status, detail, instance, (6) HYPERMEDIA — HATEOAS links with rel types, (7) VERSIONING — URL-based v1/v2 with sunset headers and migration guides. Output: OpenAPI 3.1 YAML spec complete with schemas, examples, and security schemes."
+      },
+      {
+        "user": "design a GraphQL schema",
+        "assistant": "You are a GraphQL architect. Design a production GraphQL schema: (1) TYPES — define object types with clear field descriptions and deprecation notices, (2) QUERIES — expose root query fields with relay-style connections for lists (edges/nodes/pageInfo), (3) MUTATIONS — follow input-type pattern with separate Create/Update/Delete inputs, return payload types with the affected object and clientMutationId, (4) SUBSCRIPTIONS — define real-time events with async iterators, (5) SCALARS — custom scalars for DateTime, URL, Email with validation, (6) DIRECTIVES — @auth for authorization, @cost for query complexity, @deprecated for evolution, (7) SCHEMA STITCHING — plan for federated schema with entity types and reference resolvers. Include: schema SDL, resolver structure, N+1 prevention strategy with DataLoader, and a persisted query plan."
+      },
+      {
+        "user": "create API documentation",
+        "assistant": "You are a technical writer specializing in developer experience. Create comprehensive API documentation: (1) QUICKSTART — 5-minute guide with copy-paste curl commands, (2) AUTHENTICATION — step-by-step OAuth2 flow with sequence diagram, token lifecycle, and error scenarios, (3) ENDPOINTS — for each: description, parameters table, request/response examples (happy path + 3 error cases), rate limit info, (4) SDK EXAMPLES — equivalent code in Python, JavaScript, and Go, (5) CHANGELOG — reverse-chronological with breaking changes highlighted, (6) TROUBLESHOOTING — top 5 issues with diagnostics and solutions. Write for a developer who is impatient and wants to ship, not read. Include an interactive API playground setup guide."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "code": {
+      "user": "design a webhook system",
+      "assistant": "You are a systems integration architect. Design a webhook system: (1) SUBSCRIPTION — RESTful endpoint to create/update/delete webhook subscriptions with event type filtering, (2) DELIVERY — retry queue with exponential backoff (1s, 5s, 30s, 5min, 30min), max 5 retries, (3) SECURITY — HMAC-SHA256 signature in X-Webhook-Signature header, timestamp in X-Webhook-Timestamp to prevent replay attacks, IP allowlisting, (4) PAYLOAD — consistent envelope format with event type, timestamp, resource ID, and a data object, (5) IDempotENCY — include idempotency key for safe reprocessing, (6) OBSERVABILITY — delivery status endpoint, event log with response codes, dead letter queue for permanent failures, (7) VERSIONING — payload version in header, migration guide for version bumps. Provide: OpenAPI spec, sequence diagrams for happy path and failure scenarios, and a testing tool specification."
+    },
+    "writing": {
+      "user": "write API changelog",
+      "assistant": "You are a developer relations specialist. Write an API changelog that: (1) Uses semantic versioning with clear breaking/non-breaking labels, (2) Provides a migration guide for each breaking change with before/after code examples in 3 languages, (3) Includes sunset dates with at least 90 days notice for deprecations, (4) Links to updated documentation sections, (5) Groups changes by impact level (Critical/High/Low) so developers can prioritize, (6) Includes a compatibility matrix showing which client versions support which API versions. Format: reverse-chronological with each entry containing date, version, impact level, summary, and action required."
+    }
+  }
+}

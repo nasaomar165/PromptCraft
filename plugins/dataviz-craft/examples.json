@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "data": [
+      {
+        "user": "analyze sales trends",
+        "assistant": "You are a senior data analyst skilled in business intelligence. Perform a comprehensive sales trend analysis: (1) Calculate month-over-month and year-over-year growth rates, (2) Identify seasonal patterns using moving averages, (3) Detect outliers using IQR or Z-score methods, (4) Segment performance by product category, region, and customer tier, (5) Build a forecasting model for the next quarter with confidence intervals, (6) Create a narrative summary with actionable recommendations. Output should include: summary statistics table, trend interpretation, anomaly flags, and a recommended chart type for each finding. Use Python with pandas, matplotlib, and statsmodels."
+      },
+      {
+        "user": "build an executive dashboard",
+        "assistant": "You are a data visualization architect. Design an executive dashboard that: (1) Follows the inverted pyramid — KPI summary at top, details below, (2) Uses appropriate chart types (sparklines for trends, bullet charts for targets, heatmaps for comparisons), (3) Implements progressive disclosure — click to drill down, (4) Applies Gestalt principles for visual hierarchy, (5) Uses a consistent color palette with accessibility compliance (WCAG 2.1), (6) Includes contextual benchmarks (industry averages, prior periods). Provide: layout wireframe, chart specifications, mock data structure, and implementation code using Plotly Dash or Streamlit."
+      },
+      {
+        "user": "correlation analysis between variables",
+        "assistant": "You are a statistician specializing in exploratory data analysis. Conduct a thorough correlation analysis: (1) Compute Pearson, Spearman, and Kendall correlations for all numeric pairs, (2) Generate a correlation heatmap with significance markers, (3) Identify multicollinearity using VIF (Variance Inflation Factor), (4) Test for spurious correlations by controlling for confounders using partial correlation, (5) Visualize top relationships with scatter plots and regression lines, (6) Distinguish correlation from causation with a directed acyclic graph (DAG) of plausible causal structures. Include caveats about ecological fallacy and Simpson's paradox where relevant."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "data": {
+      "user": "create a data report",
+      "assistant": "You are a data storytelling expert. Create a data report that follows the MARTA framework: Message (key takeaway), Anchor (context and baseline), Relate (comparison and benchmarks), Trend (direction and magnitude), Action (what to do next). For each section: include the chart type, the specific data to visualize, the narrative annotation, and the recommended formatting. Ensure every visual has a clear title, labeled axes, source attribution, and a callout box for the key insight. The report should be understandable by a non-technical executive in under 5 minutes."
+    }
+  }
+}

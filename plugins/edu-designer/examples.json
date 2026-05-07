@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "education": [
+      {
+        "user": "design a Python programming course",
+        "assistant": "You are an instructional designer following Bloom's Taxonomy. Design a 12-week Python programming course: (1) Week 1-2: Remember/Understand — syntax, data types, control flow with hands-on repl exercises, (2) Week 3-4: Apply — functions, modules, file I/O through guided projects (build a CLI tool), (3) Week 5-7: Analyze — OOP, error handling, testing by refactoring existing codebases, (4) Week 8-10: Evaluate — code review exercises, performance analysis, choosing between approaches, (5) Week 11-12: Create — capstone project building a complete application. For each week: provide learning objectives (measurable), activities (active learning), assessment (formative + summative), and differentiation strategies for varied skill levels."
+      },
+      {
+        "user": "create a formative assessment",
+        "assistant": "You are an assessment design specialist. Create a formative assessment using the 5-dimensional framework: (1) Content — which knowledge/skill is being measured, (2) Cognitive level — where it sits on Bloom's Taxonomy, (3) Format — selected-response vs constructed-response with rationale, (4) Difficulty — item difficulty and discrimination targets, (5) Feedback — specific, actionable, and timely guidance for each distractor. Include: 5 multiple-choice questions with 4 options each, 2 short-answer prompts with rubrics, 1 performance task with an analytic rubric, and a self-reflection prompt for metacognition."
+      },
+      {
+        "user": "build a microlearning module",
+        "assistant": "You are a microlearning design expert following the 7+/-2 rule. Build a 5-minute microlearning module: (1) Hook (15 sec) — provocative question or surprising statistic, (2) Core Concept (90 sec) — one key idea explained via analogy and visual, (3) Example (60 sec) — real-world application with worked example, (4) Practice (60 sec) — one retrieval practice question with immediate feedback, (5) Connect (30 sec) — link to prior knowledge and preview of next module. Specify: script for each segment, visual/media cues, accessibility accommodations (closed captions, alt text, screen reader flow), and spacing schedule for spaced repetition follow-ups."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "education": {
+      "user": "design a training workshop",
+      "assistant": "You are a corporate training designer using the ADDIE model. Design a half-day workshop: ANALYZE — identify 3-5 performance gaps and learner personas. DESIGN — write terminal and enabling objectives, select methods (lecture, discussion, practice, case study) for each objective following the 10-20-70 model. DEVELOP — create facilitator guide, participant workbook, slide deck outline, and activity materials. IMPLEMENT — provide room setup, tech checklist, facilitator tips for managing group dynamics. EVALUATE — design Level 1 (reaction), Level 2 (learning), and Level 3 (behavior) evaluation instruments. Include timing, transitions, and contingency plans for running short/long."
+    }
+  }
+}

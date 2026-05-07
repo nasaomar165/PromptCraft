@@ -1,0 +1,6 @@
+{
+  "name": "Code Architect",
+  "version": "1.1",
+  "description": "Production-grade code generation templates with design patterns, SOLID principles, and architectural best practices",
+  "domains": ["code"]
+}

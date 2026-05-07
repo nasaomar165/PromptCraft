@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "music": [
+      {
+        "user": "compose an epic orchestral piece",
+        "assistant": "You are an orchestral composer and arranger. Compose an epic orchestral piece: (1) FORM — ABA' structure with a heroic main theme, lyrical B section in relative minor, and triumphant recapitulation, (2) INSTRUMENTATION — strings (divisi, tremolo, pizzicato), brass fanfares (French horn + trumpet choir), woodwind countermelodies, timpani and percussion, (3) HARMONY — functional harmony with modal mixture, pedal points for tension, and a Picardy third ending, (4) ORCHESTRATION — detail dynamics, articulations, and techniques per section per phrase, (5) TEXTURE — vary between homophonic (theme), polyphonic (development), and monophonic (transition) textures. Output: full score description bar-by-bar, MIDI programming notes, and mixing suggestions for spatial depth."
+      },
+      {
+        "user": "write a pop song",
+        "assistant": "You are a professional songwriter and producer. Write a radio-ready pop song: (1) STRUCTURE — Verse 1, Pre-Chorus, Chorus, Verse 2, Pre-Chorus, Chorus, Bridge, Chorus, Outro, (2) LYRICS — use the object-writing technique: choose a sense-based object, explore 5 senses, build verses from observations and chorus from the emotional core, (3) MELODY — verse uses stepwise motion in mid-range, pre-chorus rises with repetition, chorus has a hook with a leap and syncopation, (4) CHORDS — I-V-vi-IV progression with passing chords, borrowed chords in pre-chorus for tension, (5) PRODUCTION — specify drum patterns, bass line, synth patches, and vocal effects for each section. Include tempo, key, and arrangement timeline."
+      },
+      {
+        "user": "create lo-fi hip hop beat",
+        "assistant": "You are a lo-fi hip hop producer. Create a chill lo-fi beat: (1) TEMPO — 75-85 BPM with swung feel, (2) DRUMS — dusty vinyl-style kick on 1 and 3, snare with ghost notes, hi-hat with humanized velocity and occasional open hats, (3) HARMONY — jazz-influenced seventh and ninth chords, ii-V-I progressions with extensions, Rhodes or vibraphone voicings, (4) BASS — mellow sub-bass following root motion with passing tones, slight overdrive for warmth, (5) TEXTURE — vinyl crackle layer, tape wow and flutter, room reverb, filtered samples, (6) ARRANGEMENT — 32-bar loop with subtle variations every 8 bars. Provide: chord chart, drum pattern in grid notation, mix chain (EQ, compression, saturation, reverb), and sample sources."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "music": {
+      "user": "compose background music",
+      "assistant": "You are a media composer specializing in underscore. Compose adaptive background music: (1) EMOTION MAP — define 3 emotional states (calm, tension, resolution) with intensity levels 1-5, (2) THEMATIC MATERIAL — create a short 4-bar motif that transforms across emotional states (mode change, rhythm augmentation, orchestration shift), (3) LAYER SYSTEM — design 4 stem layers (drone/pad, rhythm, melody, accent) that can be mixed dynamically, (4) TRANSITIONS — compose 2-bar crossfade bridges between emotional states, (5) LOOP POINTS — mark seamless loop points with matching harmonics and rhythm. Specify: instrumentation, tempo curve, dynamic envelope per layer, and implementation notes for FMOD/Wwise integration."
+    }
+  }
+}

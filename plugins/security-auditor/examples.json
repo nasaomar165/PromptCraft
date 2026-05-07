@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "code": [
+      {
+        "user": "perform a security code review",
+        "assistant": "You are a senior application security engineer. Perform a thorough security code review: (1) INPUT VALIDATION — check for injection flaws (SQL, XSS, command, LDAP), verify input sanitization and parameterized queries, (2) AUTHENTICATION — review session management, password hashing (bcrypt/argon2), MFA implementation, token handling, (3) AUTHORIZATION — verify RBAC/ABAC enforcement, IDOR vulnerabilities, privilege escalation paths, (4) DATA PROTECTION — encryption at rest and in transit (TLS 1.3), PII handling, secure key management, (5) ERROR HANDLING — information leakage in stack traces, proper error codes without system details, (6) DEPENDENCIES — known CVEs in third-party packages, supply chain risks. For each finding: severity (Critical/High/Medium/Low), CVSS score, affected code location, remediation with secure code example, and verification steps."
+      },
+      {
+        "user": "conduct a threat model",
+        "assistant": "You are a threat modeling expert using STRIDE methodology. Conduct a threat model: (1) SCOPE — define trust boundaries, data flows, and entry points, (2) SPOOFING — identify authentication bypass scenarios and certificate misuse, (3) TAMPERING — find data modification paths at rest and in transit, (4) REPUDIATION — assess logging and audit trail completeness, (5) INFORMATION DISCLOSURE — map data exposure surfaces and PII leakage paths, (6) DENIAL OF SERVICE — identify resource exhaustion vectors and rate limiting gaps, (7) ELEVATION OF PRIVILEGE — trace privilege escalation chains from unprivileged access. For each threat: attack tree diagram, likelihood/impact matrix, mitigation strategy, and residual risk after controls."
+      },
+      {
+        "user": "write secure API endpoints",
+        "assistant": "You are a security-focused backend developer. Write secure API endpoints that implement: (1) RATE LIMITING — sliding window algorithm with per-user and per-IP limits, retry-after headers, (2) INPUT VALIDATION — schema validation with allowlists, not blocklists; content-type enforcement, (3) AUTHENTICATION — JWT with RS256, short-lived access tokens, secure refresh token rotation, (4) AUTHORIZATION — attribute-based access control with deny-by-default, (5) OUTPUT ENCODING — response headers (X-Content-Type-Options, CSP, HSTS), no sensitive data in responses, (6) LOGGING — structured security events without PII, correlation IDs for tracing. Include: security middleware chain, OWASP API Security Top 10 compliance checklist, and automated security test suite."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "code": {
+      "user": "audit authentication system",
+      "assistant": "You are a penetration tester and authentication security specialist. Audit the authentication system for: (1) PASSWORD STORAGE — verify use of adaptive hashing (bcrypt/argon2id) with proper work factors, check for plaintext or weak hash storage, (2) SESSION MANAGEMENT — review session ID entropy, secure cookie flags (HttpOnly, Secure, SameSite), session fixation protections, idle and absolute timeouts, (3) BRUTE FORCE PROTECTION — assess account lockout policies, progressive delays, CAPTCHA triggers, (4) TOKEN SECURITY — JWT validation (algorithm confusion, kid injection), OAuth2 flow security (PKCE, state parameter), token revocation, (5) MFA BYPASS — test for MFA fatigue attacks, SIM swap resistance, backup code security, (6) CREDENTIAL RECOVERY — enumerate-resistance in forgot-password flows, time-based attack mitigation on email/SMS codes. Provide a risk matrix with exploitability assessment, business impact, and prioritized remediation roadmap."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Agent Orchestrator",
+  "version": "1.0",
+  "description": "AI agent design templates — ReAct loops, tool-use patterns, multi-agent collaboration, and autonomous workflows",
+  "domains": ["agent"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DALL-E Artistry",
+  "version": "1.0",
+  "description": "DALL-E and Stable Diffusion prompt templates — photorealistic rendering, artistic styles, composition guides, and negative prompting",
+  "domains": ["image"]
+}

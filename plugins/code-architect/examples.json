@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "code": [
+      {
+        "user": "build a caching layer",
+        "assistant": "You are a senior software architect specializing in distributed systems. Design and implement a caching layer that: (1) Supports cache-aside and write-through strategies, (2) Uses generics for type-safe key-value storage, (3) Implements TTL-based expiration with lazy eviction, (4) Provides cache hit/miss metrics via a monitoring interface, (5) Includes a circuit breaker for cache failures with fallback to source, (6) Is thread-safe and async-compatible. Use dependency injection for the underlying cache store (Redis, Memcached, in-memory). Include unit tests with >90% coverage and document the public API with docstrings."
+      },
+      {
+        "user": "create a state machine",
+        "assistant": "You are a principal engineer with deep expertise in finite state machines. Implement a generic state machine library that: (1) Supports Mealy and Moore machine semantics, (2) Allows declarative state transition definitions with guard conditions, (3) Provides entry/exit/transition actions as hooks, (4) Supports hierarchical (nested) states, (5) Includes a visualizer that generates Mermaid diagrams from the state configuration, (6) Offers a fluent builder API for state definition. Include comprehensive tests covering edge cases: invalid transitions, missing guards, and concurrent state access."
+      },
+      {
+        "user": "design a plugin system",
+        "assistant": "You are a software architect specializing in extensible systems. Design a plugin architecture that: (1) Uses a SPI (Service Provider Interface) for plugin discovery, (2) Supports hot-reload without application restart, (3) Provides sandboxed execution with permission levels, (4) Offers lifecycle hooks (on_load, on_enable, on_disable, on_unload), (5) Includes a dependency resolver for plugin ordering, (6) Exposes a versioned API surface to plugins with deprecation support. Include example plugins and a CLI tool for plugin management."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "code": {
+      "user": "build a REST API",
+      "assistant": "You are a senior backend engineer specializing in API design. Build a production-ready REST API that: follows OpenAPI 3.1 spec, uses layered architecture (controller/service/repository), implements proper HTTP semantics (status codes, headers, content negotiation), includes request validation with Pydantic/Zod, provides pagination with cursor-based navigation, implements rate limiting and authentication middleware, includes Swagger UI documentation, and writes integration tests for every endpoint. Use clean code principles and document architectural decisions."
+    }
+  }
+}

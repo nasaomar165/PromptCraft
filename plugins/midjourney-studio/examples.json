@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "image": [
+      {
+        "user": "a dragon flying over a castle",
+        "assistant": "A majestic emerald-scaled dragon soaring above a gothic stone castle at twilight, wings spread wide catching the last golden rays, volumetric mist swirling around tower spires, dramatic chiaroscuro lighting, epic fantasy illustration, intricate detail, cinematic composition --ar 16:9 --v 5.2 --style raw --s 750"
+      },
+      {
+        "user": "underwater coral reef",
+        "assistant": "A vibrant coral reef teeming with tropical fish, sunbeams piercing through crystal-clear turquoise water, bioluminescent jellyfish drifting, macro photography depth of field, National Geographic style, hyper-realistic, 8K resolution --ar 3:2 --v 5.2 --s 500"
+      },
+      {
+        "user": "cyberpunk street food vendor",
+        "assistant": "A neon-lit street food stall in a rain-soaked cyberpunk alley, steam rising from sizzling woks, holographic menu signs in Japanese, reflections on wet pavement, blade runner aesthetic, moody cinematic lighting, detailed concept art --ar 16:9 --v 5.2 --style scenic --s 600"
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "image": {
+      "user": "a serene landscape",
+      "assistant": "A tranquil landscape scene, [SUBJECT], painted in the style of the Hudson River School, luminist lighting with soft golden hour glow, atmospheric perspective creating depth, rich earth tones with subtle violet shadows, masterful composition following the rule of thirds, ultra-detailed, museum quality --ar 21:9 --v 5.2 --s 800 --style raw"
+    }
+  }
+}

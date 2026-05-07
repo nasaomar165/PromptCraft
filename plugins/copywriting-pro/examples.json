@@ -1,0 +1,34 @@
+{
+  "few_shot_examples": {
+    "writing": [
+      {
+        "user": "landing page for a project management tool",
+        "assistant": "Write a high-converting landing page using the PAS (Problem-Agitate-Solve) framework. PROBLEM: Open with a relatable pain point about chaotic project management — missed deadlines, lost tasks, team misalignment. AGITATE: Amplify the consequences — revenue lost, burnout, client churn, endless status meetings. SOLVE: Introduce the tool as the antidote. For each section: (1) Use power verbs and sensory language, (2) Include 3 social proof elements (logos, testimonials, metrics), (3) Add a CTA with urgency at each scroll-depth. Tone: confident but not arrogant, professional but human. Length: 800-1200 words with scannable subheads every 100 words."
+      },
+      {
+        "user": "email sequence for SaaS onboarding",
+        "assistant": "Create a 5-email onboarding sequence using the BAB (Before-After-Bridge) framework. Email 1 (Day 0): Welcome + quick win — show the 'after' state immediately. Email 2 (Day 2): Feature deep-dive using storytelling — show a user who transformed their workflow. Email 3 (Day 4): Address the #1 objection with social proof. Email 4 (Day 7): Re-engage with a personalized use-case based on their signup data. Email 5 (Day 14): Conversion push — limited-time upgrade offer with ROI calculator. Each email: subject line with 60-char limit, preview text, body copy, single CTA. A/B test variants for subject lines included."
+      },
+      {
+        "user": "product description for luxury watch",
+        "assistant": "Write a product description using the AIDA framework for a luxury timepiece. ATTENTION: Open with a bold sensory statement about the weight and craftsmanship. INTEREST: Weave the brand heritage — Swiss movement, hand-finished details, limited edition number. DESIRE: Paint the experience of wearing it — the feel on the wrist, the admiring glances, the heirloom quality. ACTION: Close with exclusive availability and a personalized engraving offer. Use evocative adjectives sparingly but powerfully. Format: headline, 3 short paragraphs, bullet specs, CTA. Tone: refined, understated luxury — never shouty."
+      }
+    ],
+    "marketing": [
+      {
+        "user": "social media ad for fitness app",
+        "assistant": "Create a carousel ad using the Storytelling framework. Frame 1: The Hook — a relatable moment of frustration (gym intimidation, failed diets). Frame 2: The Struggle — montage of wasted time and money on plans that don't stick. Frame 3: The Discovery — the app's unique angle (AI-personalized, 15-min workouts). Frame 4: The Transformation — real user result with specific metrics. Frame 5: The CTA — free trial with a scarcity trigger. Each frame: headline (max 40 chars), body (max 125 chars), visual direction. Include copy for primary text above carousel (max 125 chars)."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "writing": {
+      "user": "sales page for online course",
+      "assistant": "Write a long-form sales page using the PAS framework. PROBLEM: Start with the reader's current reality — the gap between where they are and where they want to be. AGITATE: Stack the hidden costs of inaction (time, money, opportunity, emotional toll). Make them feel the weight. SOLVE: Present the course as the bridge. Structure: hero section with outcome-focused headline, 3 transformation stories, curriculum overview with benefit-driven module titles, 5 objection handlers (FAQ format), 3 types of guarantee, 2 pricing tiers with anchoring, and 3 CTAs at strategic scroll points. Tone: empathetic authority. Length: 2500-3500 words."
+    },
+    "marketing": {
+      "user": "brand launch campaign",
+      "assistant": "Design a multi-channel brand launch campaign using the Hero's Journey framework. ORDINARY WORLD: Market context and customer's current status quo. CALL TO ADVENTURE: The brand's disruptive entry. MENTOR: The brand's expertise and credibility markers. TRIALS: Customer pain points the brand addresses. ORDEAL: The transformative purchase decision. REWARD: The customer's new reality. Provide: campaign tagline, 3 manifesto statements, channel-specific copy for LinkedIn/Instagram/Email/PR, launch timeline over 4 weeks, and KPI targets per channel."
+    }
+  }
+}

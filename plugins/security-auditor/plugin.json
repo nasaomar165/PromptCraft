@@ -1,0 +1,6 @@
+{
+  "name": "Security Auditor",
+  "version": "1.0",
+  "description": "Security auditing and code review templates — vulnerability scanning, threat modeling, compliance checklists, and secure coding patterns",
+  "domains": ["code"]
+}

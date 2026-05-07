@@ -1,0 +1,6 @@
+{
+  "name": "Game Dev Kit",
+  "version": "1.0",
+  "description": "Game development prompt templates — game design documents, mechanics design, NPC dialogue trees, level design, and systems architecture",
+  "domains": ["code", "writing"]
+}

@@ -1,0 +1,34 @@
+{
+  "few_shot_examples": {
+    "data": [
+      {
+        "user": "design an ETL pipeline",
+        "assistant": "You are a senior data engineer. Design a production ETL pipeline: (1) EXTRACTION — support multiple sources (API, S3, database, SFTP) with incremental loading via watermark timestamps, connection pooling, and retry logic with circuit breakers, (2) TRANSFORMATION — apply schema validation on ingest, data type coercion, deduplication using surrogate keys, business rule validation with quarantine for bad records, (3) LOADING — upsert pattern using MERGE statements, partitioned writes for large tables, idempotent loads with run_id tracking, (4) ORCHESTRATION — DAG-based scheduling with dependency management, retry policies (3 attempts with exponential backoff), SLA monitoring and alerting, (5) OBSERVABILITY — row counts at each stage, data freshness metrics, drift detection on schema changes, lineage tracking from source to destination. Include: pipeline configuration as code (YAML), dbt models for transformation, and a data contract specification."
+      },
+      {
+        "user": "optimize SQL queries",
+        "assistant": "You are a database performance engineer. Optimize SQL queries using this systematic approach: (1) ANALYZE — run EXPLAIN ANALYZE, identify top operators by cost (sequential scans, nested loops, sorts, hash aggregates), (2) INDEX — recommend covering indexes with column order based on selectivity and query predicates, identify missing indexes for JOIN and WHERE clauses, warn about over-indexing impact on writes, (3) REWRITE — convert correlated subqueries to JOINs, replace CURSOR loops with set-based operations, use window functions instead of self-joins, apply partition pruning, (4) SCHEMA — suggest table partitioning strategy (range/list/hash), materialized views for expensive aggregations, columnar storage for analytical workloads, (5) CONFIG — recommend memory allocation (work_mem, shared_buffers), parallel query settings, and vacuum/analyze schedule. For each optimization: show before/after query, explain the improvement, and estimate the performance gain."
+      },
+      {
+        "user": "design a data warehouse schema",
+        "assistant": "You are a data warehouse architect. Design a dimensional model: (1) IDENTIFY BUSINESS PROCESS — select the atomic business event to model (sales order, website visit, support ticket), (2) DECLARE GRAIN — define the single row of data (one row per order line, per session, per interaction), (3) DIMENSIONS — design conformed dimensions with surrogate keys, slowly changing dimension strategy (Type 1/2/3) per column, hierarchies (date, product, geography, customer), and junk dimensions for low-cardinality flags, (4) FACTS — choose fact table type (transactional, periodic snapshot, accumulating snapshot), add degenerate dimensions, bridge tables for many-to-many relationships, (5) SURROGATE KEYS — auto-increment integers for all dimension joins, natural keys retained for source reconciliation, (6) CONFORMANCE — define shared dimensions across fact tables for drill-across analysis. Provide: star schema diagram, DDL with constraints, sample queries for common analytics, and an ETL loading strategy per table."
+      }
+    ],
+    "code": [
+      {
+        "user": "build a data quality framework",
+        "assistant": "You are a data quality engineer. Build a data quality framework implementing 6 dimensions: (1) COMPLETENESS — null/missing value detection with threshold alerts, (2) UNIQUENESS — duplicate detection using fuzzy matching for near-duplicates, (3) VALIDITY — regex/range/referential integrity checks with severity levels, (4) TIMELINESS — freshness SLA monitoring with drift detection, (5) CONSISTENCY — cross-source reconciliation and referential integrity validation, (6) ACCURACY — statistical profiling with distribution comparison against baselines. Implement as: configurable rule engine (YAML-based check definitions), quality score calculation per table/column, automated quarantine for failing records, trend dashboards for quality KPIs, and integration with CI/CD for pre-deployment data testing. Include a Great Expectations-compatible suite template."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "data": {
+      "user": "build a real-time data pipeline",
+      "assistant": "You are a streaming data engineer. Build a real-time data pipeline: (1) SOURCE — Kafka topic with Avro schema registry for schema evolution, exactly-once semantics, (2) INGESTION — consumer group with auto-scaling based on consumer lag, dead letter topic for poison pills, (3) PROCESSING — stream-table joins for enrichment, tumbling and sliding windows for aggregations, watermarks for late-arriving data handling, (4) STATE — RocksDB-backed state store for joins and aggregations, changelog topics for fault tolerance, (5) SINK — multi-sink output (real-time dashboard via WebSocket, data lake via Parquet partitioned writes, search index via Elasticsearch), (6) MONITORING — consumer lag alerts, throughput/latency percentiles, backpressure detection, schema compatibility checks. Provide: Kafka Streams/Flink implementation, deployment spec with resource sizing, and a chaos testing plan for resilience validation."
+    },
+    "code": {
+      "user": "create a data catalog",
+      "assistant": "You are a data governance engineer. Create a data catalog system: (1) DISCOVERY — automated metadata extraction from databases (schema, stats, profiles), file systems (schema inference), and APIs (OpenAPI parsing), (2) CLASSIFICATION — PII detection using regex + ML, sensitivity levels (public/internal/confidential/restricted), tag propagation via lineage, (3) LINEAGE — column-level lineage tracking from source through transformations to destination, visual DAG display, impact analysis for breaking changes, (4) SEARCH — full-text search with faceted filters (domain, owner, sensitivity, freshness), autocomplete, and popularity ranking, (5) STEWARDSHIP — data owner assignment, quality score display, documentation wiki with change history, (6) ACCESS CONTROL — RBAC for catalog entries, automated access request workflow, audit trail for all access. Provide: data model, API spec, and integration connectors for PostgreSQL, S3, and dbt."
+    }
+  }
+}

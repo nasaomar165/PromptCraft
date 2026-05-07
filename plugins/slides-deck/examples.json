@@ -1,0 +1,24 @@
+{
+  "few_shot_examples": {
+    "slides": [
+      {
+        "user": "create a startup pitch deck",
+        "assistant": "You are a pitch deck strategist who has helped raise $500M+. Create a 12-slide pitch deck: (1) Title — company name + 5-word tagline, (2) Problem — make it visceral with a relatable scenario and a shocking statistic, (3) Solution — one clear sentence + how it works visually, (4) Demo — 3 screenshots showing the aha moment, (5) Market — TAM/SAM/SOM with bottom-up sizing, (6) Business Model — unit economics in a simple table, (7) Traction — key metrics as a hockey stick chart, (8) Competition — 2x2 matrix with axes that favor you, (9) Team — relevant credibility markers, not job titles, (10) Go-to-Market — 3 channels with CAC and conversion rates, (11) Financials — 3-year projections with key assumptions, (12) Ask — specific amount, use of funds pie chart, milestones. For each slide: headline, bullet points, visual direction, and speaker notes."
+      },
+      {
+        "user": "design a technical conference talk",
+        "assistant": "You are a technical speaker and slide designer. Design a 25-minute conference talk: (1) OPENING — start with a failure story (vulnerability builds trust), then state the key insight, (2) STRUCTURE — 3-act narrative: Problem, Discovery, Framework, (3) SLIDES — follow the 1-idea-per-slide rule, use code snippets with syntax highlighting and callout boxes for key lines, architecture diagrams instead of bullets, (4) ENGAGEMENT — live demo at the 10-min mark, audience poll at the 15-min mark, (5) CLOSING — recap with a single memorable diagram, provide QR code to resources. Specify: slide count (max 30), font sizes (title 44pt, body 28pt, code 20pt), color palette, and transition style. Include speaker notes with timing cues."
+      },
+      {
+        "user": "build a quarterly business review",
+        "assistant": "You are a management consultant. Build a QBR presentation: (1) EXEC SUMMARY — 3 key takeaways on one slide, (2) SCORECARD — RAG status for all KPIs with trend arrows, (3) FINANCIALS — revenue, margin, cash flow vs plan with waterfall chart, (4) WINS — top 3 accomplishments with quantified impact, (5) CHALLENGES — root cause analysis using 5-whys for each miss, (6) STRATEGIC UPDATES — progress on OKRs with evidence, (7) LOOKING AHEAD — next quarter priorities with resource asks, (8) APPENDIX — detailed data tables. Use a consistent visual language: green/red for on/off track, sparklines for trends, callout boxes for insights. Tone: data-driven, honest about misses, forward-looking."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "slides": {
+      "user": "create a keynote presentation",
+      "assistant": "You are a keynote presentation designer in the style of Apple keynotes. Create a 45-minute keynote: (1) OPEN — one powerful image, one sentence, 10 seconds of silence, (2) NARRATIVE ARC — status quo, disruption, vision, proof, future, (3) SLIDE DESIGN — full-bleed imagery, minimal text (max 6 words per slide), cinematic transitions, (4) REVEAL MOMENTS — 3 product reveals with build animations, darkened room to spotlight, (5) DEMO — live demo with backup video, scripted demo flow, fail-safe transitions, (6) SOCIAL PROOF — customer testimonials as short video clips, metrics as giant numbers, (7) CLOSE — call-back to opening image with new context, one-line takeaway. Provide: slide-by-slide breakdown, stage direction notes, and a rehearsal schedule leading to the event."
+    }
+  }
+}

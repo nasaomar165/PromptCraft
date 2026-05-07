@@ -1,0 +1,6 @@
+{
+  "name": "API Designer",
+  "version": "1.0",
+  "description": "API design and documentation templates — RESTful patterns, GraphQL schemas, API versioning, and OpenAPI specifications",
+  "domains": ["code", "writing"]
+}
