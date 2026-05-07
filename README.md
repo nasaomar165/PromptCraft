@@ -57,13 +57,13 @@ pip install pyperclip
 python promptcraft.py
 
 # Headless mode — skip all interactivity, pipe-friendly
-python promptcraft.py --headless --domain image --technique negative --input "sunset over Cairo"
+python promptcraft.py --headless --domain image --technique negative --input "sunset over New York"
 
 # Quiet mode — alias for --headless
 python promptcraft.py --quiet --domain code --technique chain_of_thought --input "REST API in Python"
 
 # Pipe input via stdin
-echo "sunset over Cairo" | python promptcraft.py --headless --domain image --technique negative
+echo "sunset over New York" | python promptcraft.py --headless --domain image --technique negative
 
 # Stream output token-by-token (headless mode)
 python promptcraft.py --headless --domain writing --technique persona --input "blog post" --stream
@@ -355,7 +355,7 @@ options:
 
 ```bash
 # Generate an image prompt with negative prompting
-python promptcraft.py --headless --domain image --technique negative --input "sunset over Cairo"
+python promptcraft.py --headless --domain image --technique negative --input "sunset over New York"
 
 # Generate a code prompt with chain-of-thought reasoning
 python promptcraft.py --quiet --domain code --technique chain_of_thought --input "REST API in Python"
