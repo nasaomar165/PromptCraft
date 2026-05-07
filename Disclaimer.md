@@ -106,7 +106,7 @@ Prompt engineering is an iterative discipline. Generated outputs are starting po
 
 ## 9. No Affiliation
 
-The project name "PromptCraft" and the username "nasaomar165" are personal identifiers. This project is **not affiliated with, endorsed by, sponsored by, or connected to** NASA (National Aeronautics and Space Administration), any AI company (including but not limited to OpenAI, Anthropic, Google, or Meta), or any other organization. Any resemblance to official tools or products is coincidental.
+The project name "PromptCraft" and The author(s) are personal identifiers. This project is **not affiliated with, endorsed by, sponsored by, or connected to** NASA (National Aeronautics and Space Administration), any AI company (including but not limited to OpenAI, Anthropic, Google, or Meta), or any other organization. Any resemblance to official tools or products is coincidental.
 
 ---
 
