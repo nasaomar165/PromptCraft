@@ -434,9 +434,14 @@ Both Ollama and LM Studio communicate via standard HTTP using Python's built-in 
 **0.2.0** — Streaming support, plugin system, custom domain wizard, headless mode, and security hardening.
 
 ## ⚠️ Disclaimer
-This software is provided "AS IS" without warranty of any kind. **Use at your own risk.**
-
-- No Affiliation: This project is NOT affiliated with NASA or any government organization.
-- No Liability: The authors are not responsible for any damages from using this software.
-- Educational Use: Intended for educational and personal use only.
-- Legal Compliance: Users are responsible for ensuring compliance with applicable laws.
+ 
+- This software is provided **"AS IS"** with no warranty of any kind.
+- AI-generated prompts may be **incorrect, biased, or unsuitable** — always review before deploying.
+- **Never install plugins you don't trust** — `plugin.py` files are executed directly with no sandboxing.
+- Prompt quality depends entirely on the model you run; the author(s) have no control over model behavior.
+- The author(s) accept **no liability** for damages from using this software or deploying generated prompts.
+- Not intended for use in production systems without independent testing and validation.
+- Intended for **educational and personal use** only.
+- Users are responsible for compliance with all applicable laws and platform terms of service.
+- Not affiliated with NASA, OpenAI, Anthropic, or any other organization.
+> See [DISCLAIMER.md](./DISCLAIMER.md) for full terms.
