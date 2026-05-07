@@ -444,4 +444,4 @@ Both Ollama and LM Studio communicate via standard HTTP using Python's built-in 
 - Intended for **educational and personal use** only.
 - Users are responsible for compliance with all applicable laws and platform terms of service.
 - Not affiliated with NASA, OpenAI, Anthropic, or any other organization.
-> See [DISCLAIMER.md](./DISCLAIMER.md) for full terms.
+> See [DISCLAIMER.md](Disclaimer.md) for full terms.
