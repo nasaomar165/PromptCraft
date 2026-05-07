@@ -1,0 +1,6 @@
+{
+  "version": "0.2.0",
+  "backend": "lmstudio",
+  "model": "google/gemma-3-1b",
+  "saved_at": "2026-05-06 18:10:21"
+}
