@@ -1,0 +1,92 @@
+{
+  "few_shot_examples": {
+    "code": [
+      {
+        "user": "A Python function to reverse a string",
+        "assistant": "def reverse_string(s: str) -> str:\n    \"\"\"Reverses a given string.\"\"\"\n    return s[::-1]"
+      },
+      {
+        "user": "A JavaScript function to debounce events",
+        "assistant": "function debounce(fn, delay) {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n}"
+      },
+      {
+        "user": "A SQL query to find duplicate emails",
+        "assistant": "SELECT email, COUNT(*) as count\nFROM users\nGROUP BY email\nHAVING COUNT(*) > 1\nORDER BY count DESC;"
+      }
+    ],
+    "image": [
+      {
+        "user": "A serene mountain landscape at dawn",
+        "assistant": "Photorealistic mountain landscape at golden hour dawn, misty valleys, snow-capped peaks reflecting warm orange light, dramatic volumetric rays, 8k resolution, shot on Sony A7R IV, f/8, hyper-detailed foreground wildflowers"
+      },
+      {
+        "user": "A cyberpunk street market",
+        "assistant": "Neon-soaked cyberpunk night market, rain-slicked streets, holographic vendor signs in Japanese and Chinese, dense crowds with augmented reality implants, smoke from food stalls, Blade Runner aesthetic, cinematic composition, ultra-detailed, moody atmospheric lighting"
+      }
+    ],
+    "video": [
+      {
+        "user": "A product reveal for a luxury watch",
+        "assistant": "Cinematic product reveal: luxury watch emerging from darkness, macro lens, droplets of water in slow motion 240fps, golden light catching the dial, rotating 360 degrees, reflection on polished obsidian surface, orchestral swell audio, 4K HDR, 15 seconds"
+      },
+      {
+        "user": "A nature time-lapse of a blooming flower",
+        "assistant": "Time-lapse macro video of a red rose blooming over 24 hours compressed to 10 seconds, morning dew drops visible, soft diffused natural light, shallow depth of field, green bokeh background, smooth motion interpolation, 4K 60fps"
+      }
+    ],
+    "slides": [
+      {
+        "user": "A pitch deck for a SaaS startup",
+        "assistant": "Create a 12-slide investor pitch deck for a B2B SaaS startup. Slide order: (1) Cover with tagline, (2) Problem statement with market pain data, (3) Solution overview with product screenshot, (4) How it works - 3 step visual, (5) Market size TAM/SAM/SOM, (6) Business model & pricing tiers, (7) Traction & metrics, (8) Competitive landscape matrix, (9) Team bios, (10) Roadmap 12 months, (11) Financials & ask, (12) Call to action. Use dark professional theme, consistent iconography, data visualizations on all stat slides."
+      }
+    ],
+    "writing": [
+      {
+        "user": "A blog post intro about remote work productivity",
+        "assistant": "Write a compelling 150-word hook for a blog post about remote work productivity. Open with a surprising statistic, follow with a relatable pain point, then pivot to promise the reader 5 actionable strategies they haven't heard before. Tone: conversational but authoritative, target audience: mid-level professionals transitioning to remote work."
+      }
+    ],
+    "music": [
+      {
+        "user": "An upbeat background track for a cooking video",
+        "assistant": "Compose a 2-minute upbeat background music track for a cooking video. Style: acoustic bossa nova with light percussion. Instruments: nylon string guitar, soft marimba, brushed snare, upright bass. BPM: 110. Structure: 8-bar intro, repeating 16-bar theme with subtle variation, 8-bar outro fade. Mood: warm, cheerful, non-distracting. No melody that competes with voiceover."
+      }
+    ],
+    "agent": [
+      {
+        "user": "A research assistant agent",
+        "assistant": "You are ResearchBot, an autonomous research assistant. Goal: given a topic, produce a structured research brief. Tools available: web_search, summarize_url, extract_data, write_file. Constraints: cite all sources, flag conflicting information, never hallucinate statistics. Output format: executive summary (100 words), key findings (5 bullets), source list, confidence score per finding. Always ask for clarification if the research scope is ambiguous before beginning."
+      }
+    ]
+  },
+  "one_shot_examples": {
+    "code": {
+      "user": "A function to check if a number is prime",
+      "assistant": "def is_prime(n: int) -> bool:\n    if n < 2: return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0: return False\n    return True"
+    },
+    "image": {
+      "user": "A minimalist logo for a coffee shop",
+      "assistant": "Minimalist flat vector logo for artisan coffee shop, single color, geometric coffee cup silhouette with steam forming a leaf shape, clean sans-serif typography below, suitable for dark and light backgrounds, SVG scalable, no gradients"
+    },
+    "video": {
+      "user": "A short social media ad for running shoes",
+      "assistant": "15-second vertical social media ad (9:16): Quick cuts between athlete feet on track, close-up sole grip detail, runner breaking finish line tape, slow-motion sweat spray, product shot on white background. Upbeat trap beat, bold kinetic typography overlays, brand color grade, hook in first 2 seconds."
+    },
+    "slides": {
+      "user": "A weekly team update presentation",
+      "assistant": "Create a concise 5-slide weekly team update. Slide 1: Week summary headline + 3 key wins. Slide 2: Metrics dashboard (velocity, bugs closed, uptime). Slide 3: Blockers & decisions needed (owner + deadline per item). Slide 4: Next week priorities (ranked top 5). Slide 5: Shoutouts & team pulse emoji vote. Keep each slide to max 30 words of text. Use consistent icon set."
+    },
+    "writing": {
+      "user": "An email subject line for a flash sale",
+      "assistant": "Write 5 A/B-testable email subject lines for a 24-hour flash sale on premium headphones. Include: urgency trigger, personalization token [FIRST_NAME], emoji variant, question variant, and a curiosity-gap variant. Max 50 characters each. Target open rate optimization for a tech-savvy 25-35 demographic."
+    },
+    "music": {
+      "user": "A tense underscore for a thriller scene",
+      "assistant": "Create a 90-second tension-building underscore for a thriller chase scene. Start sparse: solo cello tremolo, low drone. Layer in: staccato strings at 0:20, distorted bass pulses at 0:40, percussive hits building to climax at 1:10, sudden silence at 1:20, one resolving low note. BPM: 140, no resolution chord, leave hanging."
+    },
+    "agent": {
+      "user": "A customer support triage agent",
+      "assistant": "You are SupportBot, a first-line customer support triage agent. On every ticket: (1) classify severity 1-4, (2) identify product area, (3) check knowledge base for known solution, (4) if found: send templated reply, (5) if not: escalate to human with your classification and summary. Tone: empathetic, concise. Never promise refunds or SLA breaches without human approval. Log every action."
+    }
+  }
+}
